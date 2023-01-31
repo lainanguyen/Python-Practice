@@ -41,5 +41,3 @@ if good_credit:
 else:
     down_payment = ((1/100)*20)*1000000
     print(f"You need to pay ${down_payment}")
-
-
