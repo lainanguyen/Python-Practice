@@ -29,3 +29,18 @@ def greet_user(first_name, last_name):
 greet_user(last_name="Smith", first_name="Bob")
 
 
+# Re-usable functions
+def emoji_converter(message):
+    words = message.split(' ')
+    emojis = {
+        ":)": "😀",
+        ":(": "😞",
+        ":o": "😯"
+    }
+    output = ""
+    for i in words:
+        output += emojis.get(i, i) + " "
+    return output
+
+message = input(">")
+print(emoji_converter(message))
